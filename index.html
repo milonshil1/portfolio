@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Milon Shil - Portfolio</title>
+    <meta name="description" content="Your Name - Portfolio. Specializing in Data Mining, Data Analysis, and more.">
+    <meta name="keywords" content="Data Mining, Data Analysis, Portfolio, Your Name">
+    <meta name="author" content="Your Name">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Dark Mode Switch -->
+    <div class="theme-switch-wrapper">
+        <label class="theme-switch" for="checkbox">
+            <input type="checkbox" id="checkbox">
+            <div class="slider round"></div>
+        </label>
+        <span>Dark Mode</span>
+    </div>
+
+    <!-- Header Section -->
+    <header>
+        <div class="logo">Milon Shil</div>
+        <div class="menu-toggle" id="mobile-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <nav>
+            <ul id="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1>Hi, I'm Milon Shil</h1>
+            <p>I specialize in Data Entry, SEO Expart Google Webmaster, WordPress Customize, and more.</p>
+            <a href="#portfolio" class="btn">View My Work</a>
+            <a href="#contact" class="btn">Hire Me</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <h2>About Me</h2>
+        <div class="about-content">
+            <img src="images/profile.jpg" alt="Your Name">
+            <p>With over <strong>14+ years of online experience</strong> (since 2011), I specialize in <strong>WordPress theme customization</strong>, <strong>SEO optimization</strong>, and <strong>webmaster tools</strong> (Google Search Console, Bing Webmaster). I excel in <strong>site verification, sitemap submission, instant indexing API setup</strong>, and <strong>Google Analytics keyword research</strong>. Additionally, I offer <strong>content writing</strong> and <strong>technical troubleshooting</strong>. My expertise is backed by <strong>hands-on practice</strong>, ensuring efficient solutions. Let’s collaborate!</p>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <h2>Services</h2>
+        <div class="service-cards">
+            <div class="card">
+                <h3>Data Entry</h3>
+                <p>I provide fast and accurate data entry services.</p>
+            </div>
+            <div class="card">
+                <h3>Google Analytics</h3>
+                <p>I analyze website traffic using Google Analytics.</p>
+            </div>
+            <div class="card">
+                <h3>Webmaster Tools</h3>
+                <p>I monitor site health with Webmaster Tools.</p>
+            </div>
+            <div class="card">
+                <h3>SEO Optimization</h3>
+                <p>I improve search rankings through SEO optimization.</p>
+            </div>
+            <div class="card">
+                <h3>Content Writing</h3>
+                <p>I create engaging and SEO-friendly content.</p>
+            </div>
+            <div class="card">
+                <h3>Copy Paste</h3>
+                <p>I handle error-free copy-paste and formatting.</p>
+            </div>
+            <div class="card">
+                <h3> keyword research</h3>
+                <p>I conduct precise keyword research for targeting.</p>
+            </div>
+            <div class="card">
+                <h3>E-commerce Data Entry</h3>
+                <p>Entering and managing e-commerce product data.</p>
+            </div>
+            <div class="card">
+                <h3>WordPress Customization</h3>
+                <p>I customize and design WordPress websites professionally.</p>
+            </div>
+            <div class="card">
+                <h3>Virtual Assistant</h3>
+                <p>I offer efficient virtual assistant support remotely.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio">
+        <h2>Portfolio</h2>
+        <div class="portfolio-gallery">
+            <div class="project">
+                <img src="images/project1.jpg" alt="Project 1">
+                <h3>Data Entry</h3>
+                <p>Analyzed customer data to improve sales strategies.</p>
+                <a href="project1.html" class="btn">View Project</a>
+            </div>
+            <div class="project">
+                <img src="images/project2.jpg" alt="Project 2">
+                <h3>Google Analytics</h3>
+                <p>Managed product listings for an online store.</p>
+                <a href="project2.html" class="btn">View Project</a>
+            </div>
+            <div class="project">
+                <img src="images/project3.jpg" alt="Project 3">
+                <h3>Webmaster Tools</h3>
+                <p>Collected data from multiple websites for market research.</p>
+                <a href="project3.html" class="btn">View Project</a>
+            </div>
+            <div class="project">
+                <img src="images/project4.jpg" alt="Project 4">
+                <h3>SEO Optimization</h3>
+                <p>Created a dashboard to visualize sales data.</p>
+                <a href="project4.html" class="btn">View Project</a>
+            </div>
+            <div class="project">
+                <img src="images/project5.jpg" alt="Project 5">
+                <h3>WordPress Customization</h3>
+                <p>Customized a WordPress website for a client.</p>
+                <a href="project5.html" class="btn">View Project</a>
+            </div>
+            <div class="project">
+                <img src="images/project6.jpg" alt="Project 6">
+                <h3>Virtual Assistant Services</h3>
+                <p>Provided administrative support to a small business.</p>
+                <a href="project6.html" class="btn">View Project</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section id="blog" class="blog">
+        <h2>Blog</h2>
+        <div class="search-box">
+            <input type="text" id="searchInput" placeholder="Search posts...">
+            <button onclick="searchPosts()" class="btn">Search</button>
+        </div>
+        <div class="blog-posts" id="blogPosts">
+            <!-- Blog posts will be loaded here dynamically -->
+        </div>
+        <div class="pagination" id="pagination">
+            <!-- Pagination buttons will be loaded here dynamically -->
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2>Contact</h2>
+        <div class="contact-info">
+            <p>If you have any questions or need assistance, feel free to reach out to me via email or social media.</p>
+            <div class="contact-links">
+                <a href="mailto:milonshil1@gmail.com" class="btn">Email Me</a>
+                <a href="https://www.facebook.com/milon.shil.77398/" target="_blank" class="btn">Facebook</a>
+                <a href="#" target="_blank" class="btn">Fiverr</a>
+                <a href="#" target="_blank" class="btn">Upwork</a>
+				<a href="#" target="_blank" class="btn">Linkedin</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2025 Milon Shil. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript File -->
+    <script src="script.js"></script>
+
+    <!-- Tawk.to Live Chat -->
+    <script type="text/javascript">
+        var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+        (function(){
+            var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+            s1.async=true;
+            s1.src='https://embed.tawk.to/YOUR_WIDGET_ID/default';
+            s1.charset='UTF-8';
+            s1.setAttribute('crossorigin','*');
+            s0.parentNode.insertBefore(s1,s0);
+        })();
+    </script>
+</body>
+</html>
