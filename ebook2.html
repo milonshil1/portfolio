@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Download 'A MIND OF HER OWN' by Danielle Steel - A captivating story of independence and self-discovery from the #1 New York Times bestselling author">
+    <meta name="keywords" content="Danielle Steel, A Mind of Her Own, free ebook, bestselling novel, book download">
+    <title>A MIND OF HER OWN by Danielle Steel | Free eBook Download</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #5d4b3c;
+            --secondary-color: #3a2a1e;
+            --accent-color: #8b6b4a;
+            --light-color: #f9f5f0;
+            --text-color: #333;
+            --white: #ffffff;
+        }
+        
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--light-color);
+            overflow-x: hidden;
+        }
+        
+        h1, h2, h3, h4 {
+            font-family: 'Playfair Display', serif;
+            font-weight: 700;
+            color: var(--secondary-color);
+        }
+        
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        header {
+            background-color: var(--secondary-color);
+            color: var(--white);
+            padding: 25px 0;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        .hero {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: var(--white);
+            padding: 80px 20px;
+            text-align: center;
+            position: relative;
+        }
+        
+        .ebook-cover {
+            max-width: 300px;
+            width: 100%;
+            height: auto;
+            margin: 30px auto;
+            box-shadow: 0 15px 30px rgba(0,0,0,0.3);
+            border-radius: 5px;
+            border: 8px solid var(--white);
+            transition: transform 0.3s ease;
+        }
+        
+        .ebook-cover:hover {
+            transform: scale(1.03);
+        }
+        
+        .cta-form {
+            background: var(--white);
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+            max-width: 500px;
+            margin: 40px auto;
+        }
+        
+        .form-group {
+            margin-bottom: 25px;
+        }
+        
+        input[type="text"],
+        input[type="email"] {
+            width: 100%;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 16px;
+            font-family: 'Roboto', sans-serif;
+            transition: border 0.3s ease;
+        }
+        
+        input[type="text"]:focus,
+        input[type="email"]:focus {
+            border-color: var(--accent-color);
+            outline: none;
+        }
+        
+        .btn {
+            background-color: var(--accent-color);
+            color: var(--white);
+            border: none;
+            padding: 15px 30px;
+            font-size: 18px;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: block;
+            text-align: center;
+            font-weight: 500;
+            letter-spacing: 0.5px;
+            font-family: 'Roboto', sans-serif;
+        }
+        
+        .btn:hover {
+            background-color: #6d543b;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+        
+        .benefits {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin: 50px 0;
+            gap: 20px;
+        }
+        
+        .benefit-item {
+            flex: 1 1 300px;
+            margin-bottom: 30px;
+            text-align: center;
+            padding: 30px 20px;
+            background: var(--white);
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            transition: transform 0.3s ease;
+        }
+        
+        .benefit-item:hover {
+            transform: translateY(-5px);
+        }
+        
+        .testimonials {
+            background-color: #e8e0d9;
+            padding: 60px 20px;
+        }
+        
+        .author-bio {
+            background-color: var(--white);
+            padding: 40px;
+            margin: 40px 0;
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            border-top: 5px solid var(--accent-color);
+        }
+        
+        footer {
+            background-color: var(--secondary-color);
+            color: var(--white);
+            text-align: center;
+            padding: 30px;
+            margin-top: 40px;
+        }
+        
+        .quote {
+            font-style: italic;
+            font-size: 24px;
+            color: var(--accent-color);
+            text-align: center;
+            margin: 40px 0;
+            line-height: 1.4;
+            font-weight: 300;
+        }
+        
+        /* SEO Friendly Elements */
+        .visually-hidden {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            white-space: nowrap;
+            border: 0;
+        }
+        
+        /* Schema Markup for Books */
+        .book-meta {
+            display: none;
+        }
+        
+        /* Responsive Adjustments */
+        @media (max-width: 768px) {
+            .hero {
+                padding: 60px 20px;
+            }
+            
+            .quote {
+                font-size: 20px;
+            }
+            
+            .benefit-item {
+                flex: 1 1 100%;
+            }
+            
+            .cta-form {
+                padding: 25px 20px;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .hero {
+                padding: 50px 15px;
+            }
+            
+            .btn {
+                padding: 12px 20px;
+                font-size: 16px;
+            }
+            
+            .quote {
+                font-size: 18px;
+                margin: 30px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>A MIND OF HER OWN</h1>
+            <p>By Danielle Steel</p>
+        </div>
+    </header>
+    
+    <section class="hero">
+        <div class="container">
+            <h2>#1 New York Times Bestselling Author</h2>
+            <p>Discover the captivating new novel about an extraordinary woman's journey</p>
+            <img src="image2.jpg" alt="A MIND OF HER OWN by Danielle Steel - Book Cover" class="ebook-cover">
+            <div class="quote">
+                "A powerful story of independence, courage, and self-discovery"
+            </div>
+            <a href="https://api.powerafftrky.com/t/clk?id=2dt8POizRvTzmgxTX&s1=subaffiliate&s2=clickid" class="btn" target="_blank" rel="noopener noreferrer" style="max-width: 350px; margin: 20px auto;">Download Free Preview</a>
+        </div>
+    </section>
+    
+    <section class="container" id="download">
+        <div class="cta-form">
+            <h3>Get Your Free Preview Now</h3>
+            <form action="#" method="POST">
+                <div class="form-group">
+                    <input type="text" name="name" placeholder="Your Name" required aria-label="Your Name">
+                </div>
+                <div class="form-group">
+                    <input type="email" name="email" placeholder="Your Email" required aria-label="Your Email">
+                </div>
+                <a href="https://api.powerafftrky.com/t/clk?id=2dt8POizRvTzmgxTX&s1=subaffiliate&s2=clickid" class="btn" target="_blank" rel="noopener noreferrer">Download Now</a>
+            </form>
+            <p style="font-size: 14px; margin-top: 10px; text-align: center;">We respect your privacy. Unsubscribe at any time.</p>
+        </div>
+    </section>
+    
+    <section class="container">
+        <h2 style="text-align: center;">What You'll Discover in This Book</h2>
+        <div class="benefits">
+            <div class="benefit-item">
+                <h3>✓ Compelling Story</h3>
+                <p>A page-turning narrative about a woman who defies expectations and follows her own path</p>
+            </div>
+            <div class="benefit-item">
+                <h3>✓ Emotional Depth</h3>
+                <p>Experience the full range of human emotions through Danielle Steel's masterful storytelling</p>
+            </div>
+            <div class="benefit-item">
+                <h3>✓ Exclusive Content</h3>
+                <p>Get special access to bonus materials and author insights</p>
+            </div>
+        </div>
+        <div style="text-align: center; margin-top: 20px;">
+            <a href="https://api.powerafftrky.com/t/clk?id=2dt8POizRvTzmgxTX&s1=subaffiliate&s2=clickid" class="btn" target="_blank" rel="noopener noreferrer" style="display: inline-block; width: auto; padding: 15px 40px;">Get Instant Access</a>
+        </div>
+    </section>
+    
+    <section class="author-bio">
+        <div class="container">
+            <h2 style="text-align: center;">About Danielle Steel</h2>
+            <div style="text-align: center;">
+                <p><strong>Danielle Steel</strong> is one of the world's most popular authors, with over 800 million copies of her novels sold. Her many international bestsellers include "The Wedding Dress," "The Numbers Game," "Moroccan Sunset," and other highly acclaimed novels. She is also the author of "His Bright Light," the story of her son Nick Traina's life and death.</p>
+            </div>
+            <div style="text-align: center; margin-top: 30px;">
+                <a href="https://api.powerafftrky.com/t/clk?id=2dt8POizRvTzmgxTX&s1=subaffiliate&s2=clickid" class="btn" target="_blank" rel="noopener noreferrer" style="display: inline-block; width: auto; padding: 15px 40px;">Read Her Story Now</a>
+            </div>
+        </div>
+    </section>
+    
+    <section class="testimonials">
+        <div class="container">
+            <h2 style="text-align: center;">What Readers Are Saying</h2>
+            <div style="text-align: center; font-style: italic; margin: 30px 0;">
+                <p>"Danielle Steel does it again! A MIND OF HER OWN is her best work yet - impossible to put down."</p>
+                <p>- The New York Times Book Review</p>
+            </div>
+            <div style="text-align: center; font-style: italic; margin: 30px 0;">
+                <p>"The characters stayed with me long after I finished reading. A truly remarkable story."</p>
+                <p>- Goodreads Review</p>
+            </div>
+            <div style="text-align: center;">
+                <a href="https://api.powerafftrky.com/t/clk?id=2dt8POizRvTzmgxTX&s1=subaffiliate&s2=clickid" class="btn" target="_blank" rel="noopener noreferrer" style="display: inline-block; width: auto; padding: 15px 50px; margin-top: 20px;">Join Thousands of Readers</a>
+            </div>
+        </div>
+    </section>
+    
+    <section class="container" style="text-align: center; margin: 60px 0;">
+        <h2 style="font-size: 28px;">Ready to Begin This Captivating Journey?</h2>
+        <p style="font-size: 18px; margin-bottom: 30px;">Download your free preview of the first chapters today</p>
+        <a href="https://api.powerafftrky.com/t/clk?id=2dt8POizRvTzmgxTX&s1=subaffiliate&s2=clickid" class="btn" target="_blank" rel="noopener noreferrer" style="display: inline-block; width: auto; margin-top: 20px; padding: 18px 60px; font-size: 20px;">Get My Free Preview</a>
+    </section>
+    
+    <footer>
+        <div class="container">
+            <p>© <span id="current-year"></span> A MIND OF HER OWN by Danielle Steel. All Rights Reserved.</p>
+            <p><a href="#" style="color: #d4c9b8;">Privacy Policy</a> | <a href="#" style="color: #d4c9b8;">Contact</a> | <a href="#" style="color: #d4c9b8;">About the Author</a></p>
+        </div>
+    </footer>
+
+    <!-- Hidden Schema Markup for SEO -->
+    <div class="book-meta" itemscope itemtype="https://schema.org/Book">
+        <meta itemprop="name" content="A MIND OF HER OWN">
+        <meta itemprop="author" content="Danielle Steel">
+        <meta itemprop="bookFormat" content="EBook">
+        <meta itemprop="datePublished" content="2023">
+        <meta itemprop="publisher" content="Publisher Name">
+        <meta itemprop="image" content="image2.jpg">
+    </div>
+
+    <script>
+        // Update copyright year automatically
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+        
+        // Track outbound links
+        document.querySelectorAll('a[href^="https://api.powerafftrky.com"]').forEach(link => {
+            link.addEventListener('click', function() {
+                if (typeof gtag !== 'undefined') {
+                    gtag('event', 'conversion', {
+                        'send_to': 'AW-YOUR_CONVERSION_ID/YOUR_LABEL',
+                        'value': 1.0,
+                        'currency': 'USD'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
